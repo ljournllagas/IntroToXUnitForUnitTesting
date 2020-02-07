@@ -177,11 +177,13 @@ namespace GameEngine.Tests
         {
             Assert.PropertyChanged(_sut, "Health", () => _sut.TakeDamage(10));
         }
+        #endregion
+
 
         public void Dispose()
         {
             _output.WriteLine($"Disposing player character {_sut.FullName}");
         }
-        #endregion
+      
     }
 }
